@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Text Editor</h1>
+      <input type="text" id="title" placeholder="Enter Title..." />
+
+      <div class="toolbar">
+        <button onclick="formatText('bold')"><b>B</b></button>
+        <button onclick="formatText('italic')"><i>I</i></button>
+        <button onclick="formatText('underline')"><u>U</u></button>
+        <button onclick="clearText()">Clear</button>
+      </div>
+
+      <div
+        id="editor"
+        contenteditable="true"
+        placeholder="Start typing here..."
+      ></div>
+
+      <button onclick="downloadText()">Download</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
